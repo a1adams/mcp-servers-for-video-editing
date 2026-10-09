@@ -1,0 +1,351 @@
+{
+  "keyword": "mcp server for video editing",
+  "title": "MCP server for video editing: which editors Claude can drive, with transport, edition and operations per server",
+  "lastChecked": "2026-10-09",
+  "capabilityChecks": [
+    {
+      "key": "runsWithoutADesktopEditor",
+      "label": "Runs without a desktop editor"
+    },
+    {
+      "key": "timelineEdits",
+      "label": "Timeline edits"
+    },
+    {
+      "key": "captionsOrSubtitles",
+      "label": "Captions or subtitles"
+    },
+    {
+      "key": "renderOrExport",
+      "label": "Render or export"
+    },
+    {
+      "key": "firstPartyServer",
+      "label": "First-party server"
+    },
+    {
+      "key": "openSourceServerCode",
+      "label": "Open-source server code"
+    }
+  ],
+  "tools": [
+    {
+      "n": 1,
+      "name": "Wireflow",
+      "tagline": "hosted MCP; edits the Video Editor node inside a Wireflow workflow",
+      "homepage": "https://www.wireflow.ai/blog/best-mcp-server-for-video-editing-tools-in-2026",
+      "docs": "https://www.wireflow.ai/docs/mcp",
+      "pricing": "https://www.wireflow.ai/pricing",
+      "claudeConnection": "Streamable HTTP, OAuth 2.1 with PKCE",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Streamable HTTP endpoint from the official connector docs. Add it as a custom connector, then approve the OAuth consent screen:",
+          "lang": "text",
+          "code": "https://www.wireflow.ai/api/mcp"
+        }
+      ],
+      "capabilities": {
+        "runsWithoutADesktopEditor": true,
+        "timelineEdits": true,
+        "captionsOrSubtitles": true,
+        "renderOrExport": true,
+        "firstPartyServer": true,
+        "openSourceServerCode": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 2,
+      "name": "Descript MCP",
+      "tagline": "hosted; edits projects in one Descript Drive by prompt",
+      "homepage": "https://www.descript.com",
+      "docs": "https://help.descript.com/api-and-mcp/mcp",
+      "pricing": "https://www.descript.com/pricing",
+      "claudeConnection": "Remote HTTP, OAuth with a Descript sign-in",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "descriptinc/descript-mcp",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Claude Code command copied from the descript-mcp README (server only, without the bundled skills):",
+          "lang": "bash",
+          "code": "claude mcp add --transport http descript https://api.descript.com/v2/mcp"
+        }
+      ],
+      "capabilities": {
+        "runsWithoutADesktopEditor": true,
+        "timelineEdits": true,
+        "captionsOrSubtitles": true,
+        "renderOrExport": true,
+        "firstPartyServer": true,
+        "openSourceServerCode": null
+      },
+      "live": {
+        "stars": 33,
+        "lastPush": "2026-10-01T00:44:27Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-09"
+      }
+    },
+    {
+      "n": 3,
+      "name": "Adobe for creativity",
+      "tagline": "hosted Claude connector; no Adobe app needed",
+      "homepage": "https://developer.adobe.com/adobe-for-creativity/",
+      "docs": "https://developer.adobe.com/adobe-for-creativity/getting-started/",
+      "pricing": null,
+      "claudeConnection": "Connector from Claude's directory; transport not named",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": null,
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": null,
+      "capabilities": {
+        "runsWithoutADesktopEditor": true,
+        "timelineEdits": true,
+        "captionsOrSubtitles": null,
+        "renderOrExport": true,
+        "firstPartyServer": true,
+        "openSourceServerCode": null
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
+    },
+    {
+      "n": 4,
+      "name": "DaVinci Resolve MCP (samuelgursky)",
+      "tagline": "Resolve 18.5+ Studio, free edition via in-app bridge; stdio; MIT",
+      "homepage": "https://github.com/samuelgursky/davinci-resolve-mcp",
+      "docs": "https://github.com/samuelgursky/davinci-resolve-mcp",
+      "pricing": null,
+      "claudeConnection": "Local stdio; opt-in loopback HTTP",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "samuelgursky/davinci-resolve-mcp",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Setup command copied from the README. Open DaVinci Resolve Studio first and set External scripting to Local:",
+          "lang": "bash",
+          "code": "npx davinci-resolve-mcp setup"
+        }
+      ],
+      "capabilities": {
+        "runsWithoutADesktopEditor": false,
+        "timelineEdits": true,
+        "captionsOrSubtitles": true,
+        "renderOrExport": true,
+        "firstPartyServer": false,
+        "openSourceServerCode": true
+      },
+      "live": {
+        "stars": 3422,
+        "lastPush": "2026-10-09T02:48:29Z",
+        "latestRelease": "v4.9.3",
+        "latestReleaseDate": "2026-10-09",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    {
+      "n": 5,
+      "name": "DaVinci Resolve MCP Bridge (hiteshK03)",
+      "tagline": "Resolve 18+ free or Studio via in-app bridge; stdio; MIT",
+      "homepage": "https://github.com/hiteshK03/davinci-resolve-mcp",
+      "docs": "https://github.com/hiteshK03/davinci-resolve-mcp",
+      "pricing": null,
+      "claudeConnection": "Local stdio, bridge script inside Resolve",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "hiteshK03/davinci-resolve-mcp",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Server setup copied from the README (step 2). Copy src/CursorBridge.py into Resolve's scripts folder first:",
+          "lang": "bash",
+          "code": "git clone https://github.com/hiteshK03/davinci-resolve-mcp.git\ncd davinci-resolve-mcp\npython -m venv venv\nsource venv/bin/activate   # Windows: venv\\Scripts\\activate\npip install -r requirements.txt"
+        }
+      ],
+      "capabilities": {
+        "runsWithoutADesktopEditor": false,
+        "timelineEdits": true,
+        "captionsOrSubtitles": true,
+        "renderOrExport": true,
+        "firstPartyServer": false,
+        "openSourceServerCode": true
+      },
+      "live": {
+        "stars": 123,
+        "lastPush": "2026-03-28T04:30:13Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-09"
+      }
+    },
+    {
+      "n": 6,
+      "name": "Premiere Pro MCP Bridge (hetpatel-11)",
+      "tagline": "Premiere Pro 2020+ via a CEP panel; stdio; MIT",
+      "homepage": "https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP",
+      "docs": "https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP",
+      "pricing": null,
+      "claudeConnection": "Local stdio, CEP panel bridge",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "hetpatel-11/Adobe_Premiere_Pro_MCP",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Install commands copied from the README, run on the same computer as Premiere Pro:",
+          "lang": "bash",
+          "code": "npm install -g adobe-premiere-pro-mcp\npremiere-pro-mcp --install-cep\npremiere-pro-mcp --doctor"
+        }
+      ],
+      "capabilities": {
+        "runsWithoutADesktopEditor": false,
+        "timelineEdits": true,
+        "captionsOrSubtitles": true,
+        "renderOrExport": true,
+        "firstPartyServer": false,
+        "openSourceServerCode": true
+      },
+      "live": {
+        "stars": 667,
+        "lastPush": "2026-09-25T00:42:24Z",
+        "latestRelease": "v1.2.8",
+        "latestReleaseDate": "2026-09-02",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    {
+      "n": 7,
+      "name": "After Effects MCP Server (Dakkshin)",
+      "tagline": "After Effects 2022 or later; stdio; MIT",
+      "homepage": "https://github.com/Dakkshin/after-effects-mcp",
+      "docs": "https://github.com/Dakkshin/after-effects-mcp",
+      "pricing": null,
+      "claudeConnection": "Local stdio, bridge panel in After Effects",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "Dakkshin/after-effects-mcp",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Install steps copied from the README:",
+          "lang": "bash",
+          "code": "git clone https://github.com/Dakkshin/after-effects-mcp.git\ncd after-effects-mcp\nnpm install\nnpm run build\nnpm run install-bridge"
+        }
+      ],
+      "capabilities": {
+        "runsWithoutADesktopEditor": false,
+        "timelineEdits": true,
+        "captionsOrSubtitles": null,
+        "renderOrExport": null,
+        "firstPartyServer": false,
+        "openSourceServerCode": true
+      },
+      "live": {
+        "stars": 719,
+        "lastPush": "2026-04-01T03:23:05Z",
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": "2026-10-09"
+      }
+    },
+    {
+      "n": 8,
+      "name": "VectCutAPI",
+      "tagline": "CapCut International or Jianying drafts; stdio; Apache-2.0",
+      "homepage": "https://github.com/sun-guannan/VectCutAPI",
+      "docs": "https://github.com/sun-guannan/VectCutAPI/blob/main/MCP_Documentation_English.md",
+      "pricing": null,
+      "claudeConnection": "Local stdio",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "sun-guannan/VectCutAPI",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Install and start commands copied from the README:",
+          "lang": "bash",
+          "code": "git clone https://github.com/sun-guannan/VectCutAPI.git\ncd VectCutAPI\npip install -r requirements.txt\npip install -r requirements-mcp.txt\ncp config.json.example config.json\npython mcp_server.py"
+        }
+      ],
+      "capabilities": {
+        "runsWithoutADesktopEditor": false,
+        "timelineEdits": true,
+        "captionsOrSubtitles": true,
+        "renderOrExport": false,
+        "firstPartyServer": false,
+        "openSourceServerCode": true
+      },
+      "live": {
+        "stars": 2287,
+        "lastPush": "2026-10-03T12:43:10Z",
+        "latestRelease": "v1.5.0",
+        "latestReleaseDate": "2025-09-23",
+        "checkedAt": "2026-10-09"
+      }
+    },
+    {
+      "n": 9,
+      "name": "ffmpeg-mcp-lite",
+      "tagline": "FFmpeg on Windows, macOS or Linux; stdio; MIT",
+      "homepage": "https://github.com/kevinwatt/ffmpeg-mcp-lite",
+      "docs": "https://github.com/kevinwatt/ffmpeg-mcp-lite",
+      "pricing": null,
+      "claudeConnection": "Local stdio via uvx",
+      "restApi": null,
+      "modelSupport": null,
+      "freeTier": "unverified",
+      "repo": "kevinwatt/ffmpeg-mcp-lite",
+      "note": "Documentation review 2026-10-06; product and account behaviour were not tested.",
+      "quickstart": [
+        {
+          "label": "Claude Code command copied from the README. Install FFmpeg first:",
+          "lang": "bash",
+          "code": "claude mcp add ffmpeg uvx ffmpeg-mcp-lite"
+        }
+      ],
+      "capabilities": {
+        "runsWithoutADesktopEditor": true,
+        "timelineEdits": true,
+        "captionsOrSubtitles": true,
+        "renderOrExport": true,
+        "firstPartyServer": false,
+        "openSourceServerCode": true
+      },
+      "live": {
+        "stars": 27,
+        "lastPush": "2026-05-08T15:55:54Z",
+        "latestRelease": "v0.2.0",
+        "latestReleaseDate": "2026-01-08",
+        "checkedAt": "2026-10-09"
+      }
+    }
+  ]
+}
