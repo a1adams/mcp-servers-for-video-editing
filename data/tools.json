@@ -1,7 +1,7 @@
 {
   "keyword": "mcp server for video editing",
   "title": "MCP server for video editing: which editors Claude can drive, with transport, edition and operations per server",
-  "lastChecked": "2026-10-09",
+  "lastChecked": "2026-10-11",
   "capabilityChecks": [
     {
       "key": "runsWithoutADesktopEditor",
@@ -33,7 +33,7 @@
       "n": 1,
       "name": "Wireflow",
       "tagline": "hosted MCP; edits the Video Editor node inside a Wireflow workflow",
-      "homepage": "https://www.wireflow.ai/blog/best-mcp-server-for-video-editing-tools-in-2026",
+      "homepage": "https://www.wireflow.ai",
       "docs": "https://www.wireflow.ai/docs/mcp",
       "pricing": "https://www.wireflow.ai/pricing",
       "claudeConnection": "Streamable HTTP, OAuth 2.1 with PKCE",
@@ -49,6 +49,8 @@
           "code": "https://www.wireflow.ai/api/mcp"
         }
       ],
+      "moneyPage": "https://www.wireflow.ai/blog/best-mcp-server-for-video-editing-tools-in-2026",
+      "moneyPageLabel": "Wireflow best MCP server for video editing tools in 2026 page",
       "capabilities": {
         "runsWithoutADesktopEditor": true,
         "timelineEdits": true,
@@ -98,7 +100,7 @@
         "lastPush": "2026-10-01T00:44:27Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-09"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -160,11 +162,11 @@
         "openSourceServerCode": true
       },
       "live": {
-        "stars": 3422,
-        "lastPush": "2026-10-09T02:48:29Z",
-        "latestRelease": "v4.9.3",
-        "latestReleaseDate": "2026-10-09",
-        "checkedAt": "2026-10-09"
+        "stars": 3460,
+        "lastPush": "2026-10-10T11:26:16Z",
+        "latestRelease": "v4.10.4",
+        "latestReleaseDate": "2026-10-10",
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -196,11 +198,11 @@
         "openSourceServerCode": true
       },
       "live": {
-        "stars": 123,
+        "stars": 125,
         "lastPush": "2026-03-28T04:30:13Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-09"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -232,11 +234,11 @@
         "openSourceServerCode": true
       },
       "live": {
-        "stars": 667,
+        "stars": 673,
         "lastPush": "2026-09-25T00:42:24Z",
         "latestRelease": "v1.2.8",
         "latestReleaseDate": "2026-09-02",
-        "checkedAt": "2026-10-09"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -268,11 +270,11 @@
         "openSourceServerCode": true
       },
       "live": {
-        "stars": 719,
+        "stars": 724,
         "lastPush": "2026-04-01T03:23:05Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-10-09"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -304,11 +306,11 @@
         "openSourceServerCode": true
       },
       "live": {
-        "stars": 2287,
+        "stars": 2291,
         "lastPush": "2026-10-03T12:43:10Z",
         "latestRelease": "v1.5.0",
         "latestReleaseDate": "2025-09-23",
-        "checkedAt": "2026-10-09"
+        "checkedAt": "2026-10-11"
       }
     },
     {
@@ -344,7 +346,7 @@
         "lastPush": "2026-05-08T15:55:54Z",
         "latestRelease": "v0.2.0",
         "latestReleaseDate": "2026-01-08",
-        "checkedAt": "2026-10-09"
+        "checkedAt": "2026-10-11"
       }
     }
   ]

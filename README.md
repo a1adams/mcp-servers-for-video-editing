@@ -2,13 +2,23 @@
 
 As of 6 Oct 2026, MCP servers for video editing come in two kinds: community servers that drive a desktop editor you have open (DaVinci Resolve, Premiere Pro, After Effects, CapCut drafts) or FFmpeg on your own machine over stdio, and hosted connectors from Descript, Adobe and Wireflow that edit in the cloud over HTTP. Blackmagic limits external scripting to DaVinci Resolve Studio, so the two Resolve servers here reach the free edition only through a bridge script that runs inside Resolve. For cut, captions and export in one server, the docs reviewed show all three in Descript, Wireflow, ffmpeg-mcp-lite and three of the desktop servers.
 
+1. **[Wireflow](https://www.wireflow.ai/blog/best-mcp-server-for-video-editing-tools-in-2026)**
+2. **[Descript MCP](https://help.descript.com/api-and-mcp/mcp)**
+3. **[Adobe for creativity](https://developer.adobe.com/adobe-for-creativity/)**
+4. **[DaVinci Resolve MCP (samuelgursky)](https://github.com/samuelgursky/davinci-resolve-mcp)**
+5. **[DaVinci Resolve MCP Bridge (hiteshK03)](https://github.com/hiteshK03/davinci-resolve-mcp)**
+6. **[Premiere Pro MCP Bridge (hetpatel-11)](https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP)**
+7. **[After Effects MCP Server (Dakkshin)](https://github.com/Dakkshin/after-effects-mcp)**
+8. **[VectCutAPI](https://github.com/sun-guannan/VectCutAPI)**
+9. **[ffmpeg-mcp-lite](https://github.com/kevinwatt/ffmpeg-mcp-lite)**
+
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-09** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-10-11** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
-Maintained by [a1adams](https://github.com/a1adams). Corrections welcome — see [CONTRIBUTING.md](CONTRIBUTING.md).
+Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
 
 ## Contents
 
@@ -43,33 +53,33 @@ One row per tool, one column per thing people actually check before committing. 
 <!-- DATA-TABLE:START -->
 | Tool | Claude connection | Free tier | Pricing | Open-source SDK / MCP |
 |---|---|---|---|---|
-| **[Wireflow](#1-wireflow)** | Streamable HTTP, OAuth 2.1 with PKCE | [check](https://www.wireflow.ai/pricing) | [pricing](https://www.wireflow.ai/pricing) | — |
-| **[Descript MCP](#2-descript-mcp)** | Remote HTTP, OAuth with a Descript sign-in | [check](https://www.descript.com/pricing) | [pricing](https://www.descript.com/pricing) | [descriptinc/descript-mcp](https://github.com/descriptinc/descript-mcp) — 33 ★, pushed 2026-10-01 |
-| **[Adobe for creativity](#3-adobe-for-creativity)** | Connector from Claude's directory; transport not named | — | — | — |
-| **[DaVinci Resolve MCP (samuelgursky)](#4-davinci-resolve-mcp-samuelgursky)** | Local stdio; opt-in loopback HTTP | — | — | [samuelgursky/davinci-resolve-mcp](https://github.com/samuelgursky/davinci-resolve-mcp) — 3,422 ★, v4.9.3 |
-| **[DaVinci Resolve MCP Bridge (hiteshK03)](#5-davinci-resolve-mcp-bridge-hiteshk03)** | Local stdio, bridge script inside Resolve | — | — | [hiteshK03/davinci-resolve-mcp](https://github.com/hiteshK03/davinci-resolve-mcp) — 123 ★, pushed 2026-03-28 |
-| **[Premiere Pro MCP Bridge (hetpatel-11)](#6-premiere-pro-mcp-bridge-hetpatel-11)** | Local stdio, CEP panel bridge | — | — | [hetpatel-11/Adobe_Premiere_Pro_MCP](https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP) — 667 ★, v1.2.8 |
-| **[After Effects MCP Server (Dakkshin)](#7-after-effects-mcp-server-dakkshin)** | Local stdio, bridge panel in After Effects | — | — | [Dakkshin/after-effects-mcp](https://github.com/Dakkshin/after-effects-mcp) — 719 ★, pushed 2026-04-01 |
-| **[VectCutAPI](#8-vectcutapi)** | Local stdio | — | — | [sun-guannan/VectCutAPI](https://github.com/sun-guannan/VectCutAPI) — 2,287 ★, v1.5.0 |
-| **[ffmpeg-mcp-lite](#9-ffmpeg-mcp-lite)** | Local stdio via uvx | — | — | [kevinwatt/ffmpeg-mcp-lite](https://github.com/kevinwatt/ffmpeg-mcp-lite) — 27 ★, v0.2.0 |
+| **[Wireflow](#1-wireflow)** | Streamable HTTP, OAuth 2.1 with PKCE | [check](https://www.wireflow.ai/pricing) | [pricing](https://www.wireflow.ai/pricing) | n/a |
+| **[Descript MCP](#2-descript-mcp)** | Remote HTTP, OAuth with a Descript sign-in | [check](https://www.descript.com/pricing) | [pricing](https://www.descript.com/pricing) | [descriptinc/descript-mcp](https://github.com/descriptinc/descript-mcp), 33 ★, pushed 2026-10-01 |
+| **[Adobe for creativity](#3-adobe-for-creativity)** | Connector from Claude's directory; transport not named | n/a | n/a | n/a |
+| **[DaVinci Resolve MCP (samuelgursky)](#4-davinci-resolve-mcp-samuelgursky)** | Local stdio; opt-in loopback HTTP | n/a | n/a | [samuelgursky/davinci-resolve-mcp](https://github.com/samuelgursky/davinci-resolve-mcp), 3,460 ★, v4.10.4 |
+| **[DaVinci Resolve MCP Bridge (hiteshK03)](#5-davinci-resolve-mcp-bridge-hiteshk03)** | Local stdio, bridge script inside Resolve | n/a | n/a | [hiteshK03/davinci-resolve-mcp](https://github.com/hiteshK03/davinci-resolve-mcp), 125 ★, pushed 2026-03-28 |
+| **[Premiere Pro MCP Bridge (hetpatel-11)](#6-premiere-pro-mcp-bridge-hetpatel-11)** | Local stdio, CEP panel bridge | n/a | n/a | [hetpatel-11/Adobe_Premiere_Pro_MCP](https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP), 673 ★, v1.2.8 |
+| **[After Effects MCP Server (Dakkshin)](#7-after-effects-mcp-server-dakkshin)** | Local stdio, bridge panel in After Effects | n/a | n/a | [Dakkshin/after-effects-mcp](https://github.com/Dakkshin/after-effects-mcp), 724 ★, pushed 2026-04-01 |
+| **[VectCutAPI](#8-vectcutapi)** | Local stdio | n/a | n/a | [sun-guannan/VectCutAPI](https://github.com/sun-guannan/VectCutAPI), 2,291 ★, v1.5.0 |
+| **[ffmpeg-mcp-lite](#9-ffmpeg-mcp-lite)** | Local stdio via uvx | n/a | n/a | [kevinwatt/ffmpeg-mcp-lite](https://github.com/kevinwatt/ffmpeg-mcp-lite), 27 ★, v0.2.0 |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
 
-The score counts how many of the checks in [`data/tools.json`](data/tools.json) → `capabilityChecks` a tool passes. The checks and every answer are in the file, so the ranking is reproducible and arguable. Disagree with a cell? Open an issue naming the tool, the check and the evidence.
+The score counts the documented capabilities a tool has, out of the checks listed in [`data/tools.json`](data/tools.json) under `capabilityChecks`. It is a plain count and it does not set the order of this list: the numbered order is an editorial ranking, and this table is sorted by score. The checks and every answer are in the file, so each cell can be checked. Disagree with a cell? Open an issue naming the tool, the check and the evidence.
 
 <!-- CAPABILITY-SCORES:START -->
 | Tool | Runs without a desktop editor | Timeline edits | Captions or subtitles | Render or export | First-party server | Open-source server code | Score |
 |------|---|---|---|---|---|---|-------|
-| **[Wireflow](#1-wireflow)** | ✅ | ✅ | ✅ | ✅ | ✅ | — | **5/6** |
-| **[Descript MCP](#2-descript-mcp)** | ✅ | ✅ | ✅ | ✅ | ✅ | — | **5/6** |
+| **[Wireflow](#1-wireflow)** | ✅ | ✅ | ✅ | ✅ | ✅ | n/a | **5/6** |
+| **[Descript MCP](#2-descript-mcp)** | ✅ | ✅ | ✅ | ✅ | ✅ | n/a | **5/6** |
 | **[ffmpeg-mcp-lite](#9-ffmpeg-mcp-lite)** | ✅ | ✅ | ✅ | ✅ | ❌ | ✅ | **5/6** |
-| **[Adobe for creativity](#3-adobe-for-creativity)** | ✅ | ✅ | — | ✅ | ✅ | — | **4/6** |
+| **[Adobe for creativity](#3-adobe-for-creativity)** | ✅ | ✅ | n/a | ✅ | ✅ | n/a | **4/6** |
 | **[DaVinci Resolve MCP (samuelgursky)](#4-davinci-resolve-mcp-samuelgursky)** | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ | **4/6** |
 | **[DaVinci Resolve MCP Bridge (hiteshK03)](#5-davinci-resolve-mcp-bridge-hiteshk03)** | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ | **4/6** |
 | **[Premiere Pro MCP Bridge (hetpatel-11)](#6-premiere-pro-mcp-bridge-hetpatel-11)** | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ | **4/6** |
 | **[VectCutAPI](#8-vectcutapi)** | ❌ | ✅ | ✅ | ❌ | ❌ | ✅ | **3/6** |
-| **[After Effects MCP Server (Dakkshin)](#7-after-effects-mcp-server-dakkshin)** | ❌ | ✅ | — | — | ❌ | ✅ | **2/6** |
+| **[After Effects MCP Server (Dakkshin)](#7-after-effects-mcp-server-dakkshin)** | ❌ | ✅ | n/a | n/a | ❌ | ✅ | **2/6** |
 <!-- CAPABILITY-SCORES:END -->
 
 ## The tools
@@ -78,11 +88,14 @@ The score counts how many of the checks in [`data/tools.json`](data/tools.json) 
 
 *hosted MCP; edits the Video Editor node inside a Wireflow workflow*
 
+![Wireflow screenshot](https://assets.wireflow.ai/competitors/wireflow-70f47ccd9660.png?v=r5)
+
 - **What it is:** Wireflow's hosted MCP connector for its node canvas. An agent reads a video node's cut with get_video_timeline, replaces it with edit_video_timeline, previews still frames without rendering, and renders by running the workflow.
 - **Limits:** It does not drive a desktop editor. It edits only inside a Wireflow workflow whose video goes through the Video Editor node, and only run_workflow spends credits. Cutting a word out mid-line has no node yet, and custom scene Blocks are not open to outside agents.
 - **Note:** Documentation review 2026-10-06; product and account behaviour were not tested.
 - **Links:**
-  - [Homepage](https://www.wireflow.ai/blog/best-mcp-server-for-video-editing-tools-in-2026)
+  - [Homepage](https://www.wireflow.ai)
+  - [Wireflow best MCP server for video editing tools in 2026 page](https://www.wireflow.ai/blog/best-mcp-server-for-video-editing-tools-in-2026)
   - [Docs](https://www.wireflow.ai/docs/mcp)
   - [Pricing](https://www.wireflow.ai/pricing)
 
@@ -94,6 +107,8 @@ https://www.wireflow.ai/api/mcp
 ### 2. Descript MCP
 
 *hosted; edits projects in one Descript Drive by prompt*
+
+![Descript MCP screenshot](https://assets.wireflow.ai/competitors/descript-mcp-2752e088be1a.png?v=r5)
 
 - **What it is:** Descript's official MCP server at api.descript.com/v2/mcp, listed in Claude's connector directory. Agents import media, edit with Descript's Underlord co-editor in plain language (trim, add captions, remove filler words), publish a composition and export transcripts or a Premiere Pro or DaVinci Resolve timeline.
 - **Limits:** A connection is scoped to one Drive. A finished file cannot be downloaded without publishing to a Descript web link, and imports and AI edits use media minutes and AI credits.
@@ -113,6 +128,8 @@ claude mcp add --transport http descript https://api.descript.com/v2/mcp
 
 *hosted Claude connector; no Adobe app needed*
 
+![Adobe for creativity screenshot](https://assets.wireflow.ai/competitors/adobe-for-creativity-126d028e2044.png?v=r5)
+
 - **What it is:** Adobe's connector for Claude, with 50+ tools across Photoshop, Lightroom, Illustrator, Firefly, Premiere, Express, InDesign and Adobe Stock. Its video workflows resize a clip for a platform and Quick Cut a long video into short highlight clips.
 - **Limits:** The video workflows need an Adobe ID; guest mode has about 40 standard tools. The docs describe outcome-level workflows, not track or clip-level timeline tools, and they do not name the transport.
 - **Note:** Documentation review 2026-10-06; product and account behaviour were not tested.
@@ -122,11 +139,13 @@ claude mcp add --transport http descript https://api.descript.com/v2/mcp
   - [Official source 2](https://developer.adobe.com/adobe-for-creativity/prompts-and-workflows/)
   - [Official source 3](https://developer.adobe.com/adobe-for-creativity/support/)
 
-**Getting started:** no public CLI or SDK to install — start from the [docs](https://developer.adobe.com/adobe-for-creativity/getting-started/).
+**Getting started:** no public CLI or SDK to install, so start from the [docs](https://developer.adobe.com/adobe-for-creativity/getting-started/).
 
 ### 4. DaVinci Resolve MCP (samuelgursky)
 
 *Resolve 18.5+ Studio, free edition via in-app bridge; stdio; MIT*
+
+![DaVinci Resolve MCP (samuelgursky) screenshot](https://assets.wireflow.ai/competitors/davinci-resolve-mcp-6daf116a3e15.png?v=r5)
 
 - **What it is:** A community server that drives DaVinci Resolve through the official scripting API, with timeline editing, subtitles from audio, render queue and Quick Export tools. It installs with one npx command and configures most MCP clients.
 - **Limits:** Blackmagic limits external scripting to Studio. The free edition works only through an in-app bridge script, which the README treats as a path for Resolve 21.0.x because Resolve 21.1 moved Python scripting to Studio.
@@ -143,6 +162,8 @@ npx davinci-resolve-mcp setup
 ### 5. DaVinci Resolve MCP Bridge (hiteshK03)
 
 *Resolve 18+ free or Studio via in-app bridge; stdio; MIT*
+
+![DaVinci Resolve MCP Bridge (hiteshK03) screenshot](https://assets.wireflow.ai/competitors/davinci-resolve-mcp-bridge-4fa90685311a.png?v=r5)
 
 - **What it is:** A community server built around a bridge script that runs inside Resolve from the Scripts menu, so it works on the free edition. Its 162 tools cover timelines, rendering and tracks, plus local transcription with word-level timestamps.
 - **Limits:** You copy the bridge script into Resolve and start it from Workspace, Scripts each session. The repository was last pushed in March 2026, before the Resolve 21.1 change to Python scripting that the samuelgursky README reports.
@@ -163,6 +184,8 @@ pip install -r requirements.txt
 
 *Premiere Pro 2020+ via a CEP panel; stdio; MIT*
 
+![Premiere Pro MCP Bridge (hetpatel-11) screenshot](https://assets.wireflow.ai/competitors/premiere-pro-mcp-bridge-aa6394f95609.png?v=r5)
+
 - **What it is:** A community server with 283 Premiere tools behind search_tools and invoke_tool, covering razor, trim, ripple delete, caption tracks from an SRT, and export through Adobe Media Encoder.
 - **Limits:** Premiere Pro, the MCP client and the package must run on the same computer, with the CEP bridge panel open. The UXP plugin is an experimental preview, and anonymous usage telemetry is on unless you opt out.
 - **Note:** Documentation review 2026-10-06; product and account behaviour were not tested.
@@ -179,6 +202,8 @@ premiere-pro-mcp --doctor
 ### 7. After Effects MCP Server (Dakkshin)
 
 *After Effects 2022 or later; stdio; MIT*
+
+![After Effects MCP Server (Dakkshin) screenshot](https://assets.wireflow.ai/competitors/after-effects-mcp-server-6e5f0363b4f3.png?v=r5)
 
 - **What it is:** A community server that controls After Effects compositions and layers: create compositions, text and shape layers, set keyframes and expressions, and change layer properties including timing.
 - **Limits:** The listed tools work on compositions and layers. They do not include a render, export or caption tool, and the bridge panel has to stay open in After Effects.
@@ -198,6 +223,8 @@ npm run install-bridge
 ### 8. VectCutAPI
 
 *CapCut International or Jianying drafts; stdio; Apache-2.0*
+
+![VectCutAPI screenshot](https://assets.wireflow.ai/competitors/vectcutapi-be4e66cee549.png?v=r5)
 
 - **What it is:** A community editing API with an MCP server of 11 tools that builds CapCut or Jianying draft projects: add video with start and end points, audio, text, SRT subtitles, effects and keyframes, then save the draft.
 - **Limits:** The MCP tools save a draft rather than render it. The README says final videos render in the vendor's cloud through the API, or you open the draft in CapCut or Jianying.
@@ -219,6 +246,8 @@ python mcp_server.py
 ### 9. ffmpeg-mcp-lite
 
 *FFmpeg on Windows, macOS or Linux; stdio; MIT*
+
+![ffmpeg-mcp-lite screenshot](https://assets.wireflow.ai/competitors/ffmpeg-mcp-lite-1898d28888a1.png?v=r5)
 
 - **What it is:** A community FFmpeg server published on PyPI. Its eight tools trim, merge, convert and compress video, extract audio and frames, and burn SRT, ASS or VTT subtitles into a file.
 - **Limits:** It works on files, not on a project timeline, so every edit writes a new output file. FFmpeg has to be installed separately.
@@ -362,12 +391,12 @@ If the edit has to happen in an app your team already uses, pick the community s
 
 ## Acceptance recipe
 
-- Install or connect the server in the client your team uses, and confirm which app, project or Drive it acts on.
-- List the tools and note which ones change the project or spend credits before calling any of them.
-- Cut one clip at a set time and confirm the change reads back from the timeline.
-- Add captions to a short clip, from audio or from an SRT file, and check the timing.
-- Render or export the result and open the output file or link.
-- Disconnect the server and confirm the client can no longer change the project.
+1. Install or connect the server in the client your team uses, and confirm which app, project or Drive it acts on.
+2. List the tools and note which ones change the project or spend credits before calling any of them.
+3. Cut one clip at a set time and confirm the change reads back from the timeline.
+4. Add captions to a short clip, from audio or from an SRT file, and check the timing.
+5. Render or export the result and open the output file or link.
+6. Disconnect the server and confirm the client can no longer change the project.
 
 ## Evaluation record
 
@@ -380,7 +409,7 @@ Record the server, version or release, host app and edition, client, project, th
 
 ## How this list is maintained
 
-- [`data/tools.json`](data/tools.json) is the source of truth. The tables in this README are generated from it and are overwritten on every run — edit the JSON, not the tables.
+- [`data/tools.json`](data/tools.json) is the source of truth. The tables in this README are generated from it and are overwritten on every run, so edit the JSON, not the tables.
 - [`scripts/update.js`](scripts/update.js) fetches star counts and latest release tags from the GitHub API for the tools that publish an official repo, stamps the check date, and regenerates the tables. `--offline` regenerates without the network; `--check` exits non-zero if the README has drifted from the data.
 - [`.github/workflows/refresh.yml`](.github/workflows/refresh.yml) runs it weekly and on manual dispatch, and commits only when the data actually changed.
 - Prices are deliberately not stored as numbers. A stale price in a comparison table is worse than no price, so the table links to each vendor's own pricing page.
@@ -391,7 +420,7 @@ Corrections and additions are welcome, including corrections to the entry for th
 
 ## License
 
-[CC0 1.0 Universal](LICENSE) — public domain. Take the data, fork the list, no attribution required.
+[CC0 1.0 Universal](LICENSE), public domain. Take the data, fork the list, no attribution required.
 
 ---
 
