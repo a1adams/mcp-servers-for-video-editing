@@ -15,7 +15,7 @@ As of 6 Oct 2026, MCP servers for video editing come in two kinds: community ser
 The tables below are generated from [`data/tools.json`](data/tools.json). Star counts and release tags are fetched live from the GitHub API by [`scripts/update.js`](scripts/update.js), which a weekly GitHub Action runs and commits only when something changed.
 
 <!-- LAST-CHECKED:START -->
-Live repository data last checked **2026-10-12** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
+Live repository data last checked **2026-10-19** by [`scripts/update.js`](scripts/update.js), which runs weekly via GitHub Actions.
 <!-- LAST-CHECKED:END -->
 
 Maintained by [a1adams](https://github.com/a1adams). Corrections are welcome, see [CONTRIBUTING.md](CONTRIBUTING.md).
@@ -56,12 +56,12 @@ One row per tool, one column per thing people actually check before committing. 
 | **[Wireflow](#1-wireflow)** | Streamable HTTP, OAuth 2.1 with PKCE | [check](https://www.wireflow.ai/pricing) | [pricing](https://www.wireflow.ai/pricing) | n/a |
 | **[Descript MCP](#2-descript-mcp)** | Remote HTTP, OAuth with a Descript sign-in | [check](https://www.descript.com/pricing) | [pricing](https://www.descript.com/pricing) | [descriptinc/descript-mcp](https://github.com/descriptinc/descript-mcp), 34 ★, pushed 2026-10-01 |
 | **[Adobe for creativity](#3-adobe-for-creativity)** | Connector from Claude's directory; transport not named | n/a | n/a | n/a |
-| **[DaVinci Resolve MCP (samuelgursky)](#4-davinci-resolve-mcp-samuelgursky)** | Local stdio; opt-in loopback HTTP | n/a | n/a | [samuelgursky/davinci-resolve-mcp](https://github.com/samuelgursky/davinci-resolve-mcp), 3,489 ★, v4.10.6 |
-| **[DaVinci Resolve MCP Bridge (hiteshK03)](#5-davinci-resolve-mcp-bridge-hiteshk03)** | Local stdio, bridge script inside Resolve | n/a | n/a | [hiteshK03/davinci-resolve-mcp](https://github.com/hiteshK03/davinci-resolve-mcp), 129 ★, pushed 2026-03-28 |
-| **[Premiere Pro MCP Bridge (hetpatel-11)](#6-premiere-pro-mcp-bridge-hetpatel-11)** | Local stdio, CEP panel bridge | n/a | n/a | [hetpatel-11/Adobe_Premiere_Pro_MCP](https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP), 679 ★, v1.2.8 |
-| **[After Effects MCP Server (Dakkshin)](#7-after-effects-mcp-server-dakkshin)** | Local stdio, bridge panel in After Effects | n/a | n/a | [Dakkshin/after-effects-mcp](https://github.com/Dakkshin/after-effects-mcp), 730 ★, pushed 2026-04-01 |
-| **[VectCutAPI](#8-vectcutapi)** | Local stdio | n/a | n/a | [sun-guannan/VectCutAPI](https://github.com/sun-guannan/VectCutAPI), 2,295 ★, v1.5.0 |
-| **[ffmpeg-mcp-lite](#9-ffmpeg-mcp-lite)** | Local stdio via uvx | n/a | n/a | [kevinwatt/ffmpeg-mcp-lite](https://github.com/kevinwatt/ffmpeg-mcp-lite), 27 ★, v0.2.0 |
+| **[DaVinci Resolve MCP (samuelgursky)](#4-davinci-resolve-mcp-samuelgursky)** | Local stdio; opt-in loopback HTTP | n/a | n/a | [samuelgursky/davinci-resolve-mcp](https://github.com/samuelgursky/davinci-resolve-mcp), 3,636 ★, v4.14.2 |
+| **[DaVinci Resolve MCP Bridge (hiteshK03)](#5-davinci-resolve-mcp-bridge-hiteshk03)** | Local stdio, bridge script inside Resolve | n/a | n/a | [hiteshK03/davinci-resolve-mcp](https://github.com/hiteshK03/davinci-resolve-mcp), 139 ★, pushed 2026-03-28 |
+| **[Premiere Pro MCP Bridge (hetpatel-11)](#6-premiere-pro-mcp-bridge-hetpatel-11)** | Local stdio, CEP panel bridge | n/a | n/a | [hetpatel-11/Adobe_Premiere_Pro_MCP](https://github.com/hetpatel-11/Adobe_Premiere_Pro_MCP), 723 ★, v1.2.9 |
+| **[After Effects MCP Server (Dakkshin)](#7-after-effects-mcp-server-dakkshin)** | Local stdio, bridge panel in After Effects | n/a | n/a | [Dakkshin/after-effects-mcp](https://github.com/Dakkshin/after-effects-mcp), 764 ★, pushed 2026-04-01 |
+| **[VectCutAPI](#8-vectcutapi)** | Local stdio | n/a | n/a | [sun-guannan/VectCutAPI](https://github.com/sun-guannan/VectCutAPI), 2,312 ★, v1.5.0 |
+| **[ffmpeg-mcp-lite](#9-ffmpeg-mcp-lite)** | Local stdio via uvx | n/a | n/a | [kevinwatt/ffmpeg-mcp-lite](https://github.com/kevinwatt/ffmpeg-mcp-lite), 28 ★, v0.2.0 |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
