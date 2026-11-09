@@ -1,7 +1,7 @@
 {
   "keyword": "mcp server for video editing",
   "title": "MCP server for video editing: which editors Claude can drive, with transport, edition and operations per server",
-  "lastChecked": "2026-11-02",
+  "lastChecked": "2026-11-09",
   "capabilityChecks": [
     {
       "key": "runsWithoutADesktopEditor",
@@ -96,11 +96,11 @@
         "openSourceServerCode": null
       },
       "live": {
-        "stars": 36,
-        "lastPush": "2026-10-01T00:44:27Z",
+        "stars": 37,
+        "lastPush": "2026-11-07T07:21:48Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -162,11 +162,11 @@
         "openSourceServerCode": true
       },
       "live": {
-        "stars": 3899,
-        "lastPush": "2026-11-02T15:59:50Z",
-        "latestRelease": "v4.18.4",
-        "latestReleaseDate": "2026-11-01",
-        "checkedAt": "2026-11-02"
+        "stars": 4012,
+        "lastPush": "2026-11-09T12:57:59Z",
+        "latestRelease": "v5.0.1",
+        "latestReleaseDate": "2026-11-09",
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -198,11 +198,11 @@
         "openSourceServerCode": true
       },
       "live": {
-        "stars": 150,
+        "stars": 159,
         "lastPush": "2026-03-28T04:30:13Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -234,11 +234,11 @@
         "openSourceServerCode": true
       },
       "live": {
-        "stars": 804,
-        "lastPush": "2026-10-24T21:21:21Z",
+        "stars": 838,
+        "lastPush": "2026-11-02T23:20:08Z",
         "latestRelease": "v1.2.11",
         "latestReleaseDate": "2026-10-24",
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -270,11 +270,11 @@
         "openSourceServerCode": true
       },
       "live": {
-        "stars": 836,
+        "stars": 875,
         "lastPush": "2026-04-01T03:23:05Z",
         "latestRelease": null,
         "latestReleaseDate": null,
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -306,11 +306,11 @@
         "openSourceServerCode": true
       },
       "live": {
-        "stars": 2354,
-        "lastPush": "2026-10-24T03:31:51Z",
+        "stars": 2366,
+        "lastPush": "2026-11-07T09:44:35Z",
         "latestRelease": "v1.5.0",
         "latestReleaseDate": "2025-09-23",
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     },
     {
@@ -346,7 +346,7 @@
         "lastPush": "2026-05-08T15:55:54Z",
         "latestRelease": "v0.2.0",
         "latestReleaseDate": "2026-01-08",
-        "checkedAt": "2026-11-02"
+        "checkedAt": "2026-11-09"
       }
     }
   ]
