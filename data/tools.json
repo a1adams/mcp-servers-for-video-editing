@@ -348,6 +348,44 @@
         "latestReleaseDate": "2026-01-08",
         "checkedAt": "2026-11-16"
       }
+    },
+    {
+      "n": 10,
+      "name": "Audo AI",
+      "tagline": "Hosted file-based editing for cutting, captioning and reframing video",
+      "homepage": "https://audo.ai",
+      "docs": "https://audo.ai/docs/mcp",
+      "pricing": "https://audo.ai/pricing",
+      "claudeConnection": "Streamable HTTP with OAuth",
+      "restApi": "https://audo.ai/docs/api",
+      "modelSupport": null,
+      "freeTier": "Daily per-tool allowance",
+      "repo": "audo-ai/audo-mcp",
+      "note": "Processes uploaded or linked files. The connector does not control a local editor timeline. The repository packages setup files for the hosted service.",
+      "quickstart": [
+        {
+          "label": "Add the hosted connector to Claude Code:",
+          "lang": "sh",
+          "code": "claude mcp add --transport http --scope user audo https://audo.ai/mcp"
+        }
+      ],
+      "moneyPage": null,
+      "moneyPageLabel": null,
+      "capabilities": {
+        "runsWithoutADesktopEditor": true,
+        "timelineEdits": false,
+        "captionsOrSubtitles": true,
+        "renderOrExport": true,
+        "firstPartyServer": true,
+        "openSourceServerCode": false
+      },
+      "live": {
+        "stars": null,
+        "lastPush": null,
+        "latestRelease": null,
+        "latestReleaseDate": null,
+        "checkedAt": null
+      }
     }
   ]
 }

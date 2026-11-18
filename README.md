@@ -62,6 +62,7 @@ One row per tool, one column per thing people actually check before committing. 
 | **[After Effects MCP Server (Dakkshin)](#7-after-effects-mcp-server-dakkshin)** | Local stdio, bridge panel in After Effects | n/a | n/a | [Dakkshin/after-effects-mcp](https://github.com/Dakkshin/after-effects-mcp), 892 ★, pushed 2026-04-01 |
 | **[VectCutAPI](#8-vectcutapi)** | Local stdio | n/a | n/a | [sun-guannan/VectCutAPI](https://github.com/sun-guannan/VectCutAPI), 2,380 ★, v1.5.0 |
 | **[ffmpeg-mcp-lite](#9-ffmpeg-mcp-lite)** | Local stdio via uvx | n/a | n/a | [kevinwatt/ffmpeg-mcp-lite](https://github.com/kevinwatt/ffmpeg-mcp-lite), 28 ★, v0.2.0 |
+| **[Audo AI](#10-audo-ai)** | Streamable HTTP with OAuth | [check](https://audo.ai/pricing) | [pricing](https://audo.ai/pricing) | [audo-ai/audo-mcp](https://github.com/audo-ai/audo-mcp) |
 <!-- DATA-TABLE:END -->
 
 ## Capability scores
@@ -78,6 +79,7 @@ The score counts the documented capabilities a tool has, out of the checks liste
 | **[DaVinci Resolve MCP (samuelgursky)](#4-davinci-resolve-mcp-samuelgursky)** | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ | **4/6** |
 | **[DaVinci Resolve MCP Bridge (hiteshK03)](#5-davinci-resolve-mcp-bridge-hiteshk03)** | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ | **4/6** |
 | **[Premiere Pro MCP Bridge (hetpatel-11)](#6-premiere-pro-mcp-bridge-hetpatel-11)** | ❌ | ✅ | ✅ | ✅ | ❌ | ✅ | **4/6** |
+| **[Audo AI](#10-audo-ai)** | ✅ | ❌ | ✅ | ✅ | ✅ | ❌ | **4/6** |
 | **[VectCutAPI](#8-vectcutapi)** | ❌ | ✅ | ✅ | ❌ | ❌ | ✅ | **3/6** |
 | **[After Effects MCP Server (Dakkshin)](#7-after-effects-mcp-server-dakkshin)** | ❌ | ✅ | n/a | n/a | ❌ | ✅ | **2/6** |
 <!-- CAPABILITY-SCORES:END -->
@@ -259,6 +261,10 @@ Claude Code command copied from the README. Install FFmpeg first:
 ```bash
 claude mcp add ffmpeg uvx ffmpeg-mcp-lite
 ```
+
+### 10. Audo AI
+
+Audo edits uploaded or linked media through a hosted MCP connector. It can trim files, burn captions and export reframed videos. It does not drive an open desktop editing timeline. Connect with `claude mcp add --transport http --scope user audo https://audo.ai/mcp` and authorize the connection. [Setup and tools](https://audo.ai/docs/mcp) · [Pricing](https://audo.ai/pricing).
 
 ## Decision this list supports
 
